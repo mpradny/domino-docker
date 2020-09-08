@@ -81,8 +81,10 @@ docker run -it -e "ServerName=Volt" \
     -e "AdminFirstName=Thomas" \
     -e "AdminLastName=Hampel" \
     -e "AdminPassword=passw0rd" \
+    -e "ConfigFile=config.json" \
     -h volt.demo.com \
     -p 80:80 \
+    -p 443:443
     -p 1352:1352 \
     -v dominodata_volt:/local/notesdata \
     --stop-timeout=60 \
