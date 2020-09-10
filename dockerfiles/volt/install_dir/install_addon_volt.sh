@@ -258,7 +258,11 @@ if [ -z "$DOMINO_HOST_NAME" ]; then
 fi
 
 if [ -z "$DOMINO_VOLT_URL" ]; then
-  DOMINO_VOLT_URL="https://$DOMINO_HOST_NAME/volt-apps"
+  if [ "$NoSSL" != "true" ]; then
+    DOMINO_VOLT_URL="https://$DOMINO_HOST_NAME/volt-apps"
+  else
+    DOMINO_VOLT_URL="http://$DOMINO_HOST_NAME/volt-apps"
+  fi
 fi
 
 cd /local/notesdata

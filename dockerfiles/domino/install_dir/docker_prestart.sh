@@ -444,9 +444,11 @@ if [ ! -z "$ConfigFile" ]; then
   fi
 fi
 
-if [ ! -e keyfile.kyr ]; then
-  header "Creating Domino Key Ring File from local CA"
-  $DOMDOCK_SCRIPT_DIR/create_ca_kyr.sh
+if [ "$NoSSL" != "true" ]; then
+  if [ ! -e keyfile.kyr ]; then
+    header "Creating Domino Key Ring File from local CA"
+    $DOMDOCK_SCRIPT_DIR/create_ca_kyr.sh
+  fi
 fi
 
 
@@ -483,6 +485,7 @@ unset ServerName
 unset ServerPassword
 unset SystemDatabasePath
 unset Notesini
+unset NoSSL
 
 if [ -e ~/.bash_history ]; then
   cat /dev/null > ~/.bash_history
