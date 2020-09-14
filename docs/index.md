@@ -12,7 +12,7 @@ Main idea is to download and apply all required fixes/patches/updates from a sof
 ## Supported environments
 
 The project is supported on Docker Desktop, Docker Server, Podman, Kubernetes (K8s) and OpenShift.
-See detailed information about [supported run-time and build environments](components/supported-environments)
+See detailed information about [supported run-time and build environments](supported-environments)
 
 ## Where to get HCL Domino software
 
