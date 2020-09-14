@@ -2,7 +2,7 @@
 layout: default
 title: Software Repository
 parent: Documentation of Components
-nav_order: 1
+nav_order: 2
 ---
 ## Description
 

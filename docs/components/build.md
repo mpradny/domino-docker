@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Software Repository
+title: Build Command Documentation
 parent: Documentation of Components
 nav_order: 1
 ---

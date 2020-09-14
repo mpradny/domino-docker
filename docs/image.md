@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Conceptual details
+title: How to build the images
 nav_order: 4
 ---
 
