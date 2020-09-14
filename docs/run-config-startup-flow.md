@@ -1,4 +1,8 @@
-
+---
+layout: default
+title: Domino Docker Startup and Configuration Flow
+nav_order: 3
+---
 # Domino Docker Startup and Configuration Flow
 
 This document describes the general setup and update flow used.

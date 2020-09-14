@@ -1,3 +1,10 @@
+---
+layout: default
+title: Management scripts
+parent: Documentation of Components
+nav_order: 5
+---
+
 # Management Script 
 
 This Domino Docker script is intended to simplify your Domino on Docker environment.

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Environment variables
+parent: Documentation of Components
+nav_order: 3
+---
 
 - [Introduction](#introduction)
 - [Special](#special)

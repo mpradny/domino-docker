@@ -1,3 +1,9 @@
+---
+layout: default
+title: Docker-Compose Examples
+parent: Examples
+nav_order: 1
+---
 # Docker-Compose Examples
 
 Docker Compose is a separate component (not shipped wth Docker CE). Docker Compose is a conventient way to define one or multiple containers. Start and stop, creation of required components like volumes or networks etc. are automatically performed by Docker Compose.

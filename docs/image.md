@@ -1,3 +1,9 @@
+---
+layout: default
+title: Conceptual details
+nav_order: 4
+---
+
 - [Intro](#intro)
 - [Install Docker](#install-docker)
   - [Verify Docker is running](#verify-docker-is-running)

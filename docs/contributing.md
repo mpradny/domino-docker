@@ -1,3 +1,9 @@
+---
+layout: default
+title: Contributing
+nav_order: 7
+---
+
 # Contributing to this Domino Docker project
 We welcome contributions but request that you follow these guidelines.
 

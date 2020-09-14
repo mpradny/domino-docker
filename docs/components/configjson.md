@@ -1,3 +1,10 @@
+---
+layout: default
+title: Config.json documentation
+parent: Documentation of Components
+nav_order: 4
+---
+
 - [Introduction](#introduction)
 - [Header](#header)
 - [Elements](#elements)
