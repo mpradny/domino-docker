@@ -1,3 +1,9 @@
+---
+layout: default
+title: Documentation of Components
+nav_order: 4
+has_children: true
+---
 # Documentation of Components
 
 ## build.sh

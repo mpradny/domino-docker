@@ -1,3 +1,8 @@
+---
+layout: default
+title: Conceptual details
+nav_order: 2
+---
 # Conceptual details
 
 ## Installation-Time

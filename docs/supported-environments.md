@@ -1,3 +1,8 @@
+---
+layout: default
+title: Supported Environments
+nav_order: 3
+---
 # Supported Environments
 
 The following environments have been tested and are the main environments the project works with.

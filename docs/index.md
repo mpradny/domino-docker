@@ -1,3 +1,8 @@
+---
+layout: default
+title: Domino Docker
+nav_order: 1
+---
 # Domino Docker 
 This project contains build scripts for Docker images (dockerfiles) and Docker related utilities for HCL Domino. There are separate folders within this repository that contain build scripts for other HCL products like Traveler and HCL Domino Volt. This repository provides the utilities to build an HCL Domino Server with the latest fixes in a Docker image.
 
