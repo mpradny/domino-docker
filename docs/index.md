@@ -6,13 +6,13 @@ nav_order: 1
 # Domino Docker 
 This project contains build scripts for Docker images (dockerfiles) and Docker related utilities for HCL Domino. There are separate folders within this repository that contain build scripts for other HCL products like Traveler and HCL Domino Volt. This repository provides the utilities to build an HCL Domino Server with the latest fixes in a Docker image.
 
-Main idea is to download and apply all required fixes/patches/updates from a software repository server instead of adding the source installation files to the image directly. For this reason this repo will start a temporary local nginx server at build time to act as a [software repository server](software).
+Main idea is to download and apply all required fixes/patches/updates from a software repository server instead of adding the source installation files to the image directly. For this reason this repo will start a temporary local nginx server at build time to act as a [software repository server](compontents/software-repo).
 
 
 ## Supported environments
 
 The project is supported on Docker Desktop, Docker Server, Podman, Kubernetes (K8s) and OpenShift.
-See detailed information about [supported run-time and build environments](docs/supported-environments.md)
+See detailed information about [supported run-time and build environments](components/supported-environments)
 
 ## Where to get HCL Domino software
 
@@ -22,7 +22,7 @@ All HCL customers (and business partners with the [Partner Pack](https://www.hcl
 
 ## How to build the image(s)
 To build the latest available image 
-1. Download the required [software packages](software/README.md) to the 'software' directory
+1. Download the required [software packages](components/software-repo) to the 'software' directory
 2. From the root folder of this repository issue the following command 
 ```bash
 ./build domino
@@ -34,14 +34,14 @@ Other options available:
 * ```build volt``` - Volt on Domino
  
 ## How to use this image
-When a new container is created from the HCL Domino Docker image, it takes [environment variables](docs/run-variables.md) into account for auto-configuring the Domino server. Details on how to use those variables can be found [here](docs/run-variables.md)
+When a new container is created from the HCL Domino Docker image, it takes [environment variables](components/run-variables) into account for auto-configuring the Domino server. Details on how to use those variables can be found [here](components/run-variables)
 
 Domino Data directory needs to be a persistent volume. On Docker it will be automatically created. You can also use an existing volume. All volume types your container infrastructure supports can be used.
 
 ### Management Script
-The folder [Management](master/management) contains a script that simplifies the managing your containers. The Linux bash script is supposed to run on the Docker host.
+The folder [Management](components/management) contains a script that simplifies the managing your containers. The Linux bash script is supposed to run on the Docker host.
 
-For details see the documentation of the [Management Script](management.md)
+For details see the documentation of the [Management Script](components/management.md)
 
 ### Manually creating a new container from an image
 First create a new/empty persistent volume that will be used as the Domino Data directory later on. In this example we are calling it "dominodata_demo1".
@@ -120,7 +120,7 @@ Example:
 For issues relating specifically to the Dockerfiles and scripts, please use the [GitHub issue tracker](issues)
 
 ## Contributing
-We welcome contributions following [our guidelines](CONTRIBUTING.md).
+We welcome contributions following [our guidelines](contributing.md).
 
 ## Community Support
 Special Thanks go to the following people for having provided valuable input to this project
