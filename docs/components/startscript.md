@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Domino on Unix/Linux Start Script
 parent: Documentation of Components
 nav_order: 2
 ---

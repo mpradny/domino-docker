@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Software Repository
 parent: Documentation of Components
 nav_order: 1
 ---
