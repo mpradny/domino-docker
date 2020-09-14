@@ -1,3 +1,8 @@
+---
+layout: default
+parent: Documentation of Components
+nav_order: 1
+---
 ## Description
 
 This directory is used to host the installation packages that will be used inside of a Docker image. 

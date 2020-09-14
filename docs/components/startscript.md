@@ -1,3 +1,8 @@
+---
+layout: default
+parent: Documentation of Components
+nav_order: 2
+---
 # Domino on Unix/Linux Start Script
 This start script was proudly donated to this project by [Daniel Nashed](http://blog.nashcom.de/) and is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
 
